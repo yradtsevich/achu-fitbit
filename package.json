@@ -1,0 +1,28 @@
+{
+  "fitbit": {
+    "appType": "clockface",
+    "appDisplayName": "Achu",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate",
+      "access_user_profile"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Achu"
+      }
+    },
+    "appUUID": "0246544a-621b-45e0-9462-fd7c40af632e"
+  },
+  "dependencies": {
+    "@fitbit/sdk": "~1.0.2",
+    "@fitbit/sdk-cli": "^1.0.1"
+  },
+  "scripts": {
+    "build": "fitbit-build"
+  }
+}
