@@ -20,7 +20,7 @@ function clockCallback(data) {
   txtTime.text = data.time;
   txtDate.text = data.date;
 }
-simpleClock.initialize("minutes", "longDate", clockCallback);
+simpleClock.initialize("minutes", "shortDate", clockCallback);
 
 /* ------- ACTIVITY --------- */
 function activityCallback(data) {

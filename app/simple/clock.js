@@ -40,10 +40,10 @@ function tickHandler(evt) {
 
   switch(dateFormat) {
     case "shortDate":
-      dateString = `${dayNumber} ${monthNameShort}`;
+      dateString = `${monthNameShort} ${dayNumber}`;
       break;
     case "mediumDate":
-      dateString = `${dayNumber} ${monthName}`;
+      dateString = `${monthName} ${dayNumber}`;
       break;
     case "longDate":
       dateString = `${dayName} ${monthName} ${dayNumber}`;
