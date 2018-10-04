@@ -2,10 +2,8 @@
   <rect id="background" />
   <text id="txtTime" class="clock-text">13:37</text>
   <!-- <text id="txtTime" x="145" y="50" font-size="48" font-family="System-Regular" text-anchor="end"/> -->
-  <rect class="divider divider-top" />
   <text id="txtDate" class="date-text">MON JANUARY 01</text>
   <text id="txtDay" class="day-text">SUNDAY</text>
-  <rect class="divider divider-btm" />
   <svg class="stats">
     <use id="iconHRM" href="#heart-beat" />
     <text id="txtHRM" class="stat-left" />

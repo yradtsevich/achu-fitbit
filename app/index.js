@@ -9,6 +9,7 @@ let background = document.getElementById("background");
 let dividers = document.getElementsByClassName("divider");
 let txtTime = document.getElementById("txtTime");
 let txtDate = document.getElementById("txtDate");
+let txtDay = document.getElementById("txtDay");
 let txtHRM = document.getElementById("txtHRM");
 let iconHRM = document.getElementById("iconHRM");
 let imgHRM = iconHRM.getElementById("icon");
@@ -19,6 +20,7 @@ let statsCycleItems = statsCycle.getElementsByClassName("cycle-item");
 function clockCallback(data) {
   txtTime.text = data.time;
   txtDate.text = data.date;
+  txtDay.text = data.day;
 }
 simpleClock.initialize("minutes", "shortDate", clockCallback);
 
