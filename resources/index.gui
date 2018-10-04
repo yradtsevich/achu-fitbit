@@ -1,9 +1,35 @@
-<svg>
-  <rect id="background" />
+<svg class="background">
+
+  <gradientRect width="100%" height="100%"
+    gradient-type="radial"
+    gradient-x1="50%" gradient-y1="50%"
+    gradient-x2="50%+150" gradient-y2="50%+150"
+    gradient-color1="#44c4a1"
+    gradient-color2="black" />
+
+  <!--values-->
+  <!--center-->
+  <arc x="63" y="63" width="175" height="175" fill="#fd491f" arc-width="20" start-angle="0" sweep-angle="260"/>
+  <!--top right-->
+  <arc x="31" y="31" width="240" height="240" fill="#2476ff" arc-width="5" start-angle="0" sweep-angle="90"/>
+  <!--bottom right; note: convert value to negative-->
+  <arc x="31" y="31" width="240" height="240" fill="#ff972f" arc-width="5" start-angle="90" sweep-angle="90"/>
+  <!--bottom left-->
+  <arc x="31" y="31" width="240" height="240" fill="#823fff" arc-width="5" start-angle="180" sweep-angle="90"/>
+  <!--top left; note: convert values to negative-->
+  <arc x="31" y="31" width="240" height="240" fill="#fd491f" arc-width="5" start-angle="270" sweep-angle="90"/>
+
+  <!-- Time and Date -->
   <text id="txtTime" class="clock-text">13:37</text>
-  <!-- <text id="txtTime" x="145" y="50" font-size="48" font-family="System-Regular" text-anchor="end"/> -->
   <text id="txtDate" class="date-text">MON JANUARY 01</text>
   <text id="txtDay" class="day-text">SUNDAY</text>
+
+
+  <text id="txtPercentSign" x="200" y="50%" font-size="24" fill="#44c4a1" text-anchor="end" font-family="SevilleSharp-Regular" letter-spacing="-2">%</text>
+  <text id="txtAchuScore" x="50%-5" y="50%+10" font-size="60" fill="#ffffff" text-anchor="middle" font-family="System-Bold" letter-spacing="-2">72</text>
+  <text id="txtAchuRisk" x="50%+5" y="50%+34" font-size="24" fill="#ffffff" text-anchor="middle" font-family="SevilleSharp-Regular" letter-spacing="-2">risk level</text>
+
+
   <svg class="stats">
     <use id="iconHRM" href="#heart-beat" />
     <text id="txtHRM" class="stat-left" />

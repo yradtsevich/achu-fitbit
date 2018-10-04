@@ -51,37 +51,37 @@ function hrmCallback(data) {
 simpleHRM.initialize(hrmCallback);
 
 /* -------- SETTINGS -------- */
-function settingsCallback(data) {
-  if (!data) {
-    return;
-  }
-  if (data.colorBackground) {
-    background.style.fill = data.colorBackground;
-  }
-  if (data.colorDividers) {
-    dividers.forEach(item => {
-      item.style.fill = data.colorDividers;
-    });
-  }
-  if (data.colorTime) {
-    txtTime.style.fill = data.colorTime;
-  }
-  if (data.colorDate) {
-    txtDate.style.fill = data.colorDate;
-  }
-  if (data.colorActivity) {
-    statsCycleItems.forEach((item, index) => {
-      let img = item.firstChild;
-      let txt = img.nextSibling;
-      img.style.fill = data.colorActivity;
-      txt.style.fill = data.colorActivity;
-    });
-  }
-  if (data.colorHRM) {
-    txtHRM.style.fill = data.colorHRM;
-  }
-  if (data.colorImgHRM) {
-    imgHRM.style.fill = data.colorImgHRM;
-  }
-}
-simpleSettings.initialize(settingsCallback);
+// function settingsCallback(data) {
+//   if (!data) {
+//     return;
+//   }
+//   if (data.colorBackground) {
+//     background.style.fill = data.colorBackground;
+//   }
+//   if (data.colorDividers) {
+//     dividers.forEach(item => {
+//       item.style.fill = data.colorDividers;
+//     });
+//   }
+//   if (data.colorTime) {
+//     txtTime.style.fill = data.colorTime;
+//   }
+//   if (data.colorDate) {
+//     txtDate.style.fill = data.colorDate;
+//   }
+//   if (data.colorActivity) {
+//     statsCycleItems.forEach((item, index) => {
+//       let img = item.firstChild;
+//       let txt = img.nextSibling;
+//       img.style.fill = data.colorActivity;
+//       txt.style.fill = data.colorActivity;
+//     });
+//   }
+//   if (data.colorHRM) {
+//     txtHRM.style.fill = data.colorHRM;
+//   }
+//   if (data.colorImgHRM) {
+//     imgHRM.style.fill = data.colorImgHRM;
+//   }
+// }
+// simpleSettings.initialize(settingsCallback);
